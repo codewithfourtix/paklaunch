@@ -118,8 +118,12 @@ h1, h2, h3, p, ul { margin: 0; }
 }
 .arrow-button:hover { background: var(--ink); color: white; }
 .arrow-button span, .pathway-arrow { font-family: Arial, sans-serif; font-size: 29px; line-height: 1; }
-.hero-art { margin-top: -38px; pointer-events: none; }
-.hero-art img { width: 100%; height: clamp(150px, 20.6vw, 350px); object-fit: cover; }
+.hero-art {
+  height: clamp(84px, 17vw, 264px);
+  margin: 22px 0 16px;
+  background: url('./hero.webp?inline') center / 100% auto no-repeat;
+  pointer-events: none;
+}
 .section-label { padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 400; line-height: 1.25; text-transform: uppercase; }
 
 .pathways { padding-bottom: 96px; }
@@ -192,7 +196,6 @@ h1, h2, h3, p, ul { margin: 0; }
   .quick-links { gap: 25px; }
   .menu-toggle { margin-left: 10px; }
   .hero { padding-top: 65px; }
-  .hero-art { margin-top: -6px; }
   .community-layout { grid-template-columns: 165px minmax(0, 1fr); }
   .conversation, .chapter-grid { gap: 20px; }
   .contact-layout { grid-template-columns: 1fr 1fr; align-items: start; }
@@ -211,8 +214,7 @@ h1, h2, h3, p, ul { margin: 0; }
   .hero { gap: 23px; padding-top: 53px; }
   .hero h1 { font-size: clamp(39px, 8.9vw, 61px); }
   .hero p { font-size: 17px; }
-  .hero-art { margin-top: 12px; }
-  .hero-art img { height: clamp(110px, 25vw, 170px); }
+  .hero-art { margin-block: 16px 12px; }
   .pathways-intro, .pathways-grid, .community-layout, .chapter-grid, .programming-layout { grid-template-columns: 1fr; gap: 20px; }
   .pathways-intro { padding-top: 24px; }
   .pathways-intro img { max-width: 380px; }
