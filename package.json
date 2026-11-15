@@ -18,8 +18,5 @@
   "private": true,
   "devDependencies": {
     "vite": "^8.3.8"
-  },
-  "dependencies": {
-    "@fontsource-variable/geist": "^5.3.0"
   }
 }

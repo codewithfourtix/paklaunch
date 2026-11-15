@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Paklaunch Lahore</title>
     <link rel="icon" type="image/png" href="/media/pl-mark.png">
+    <link rel="preload" href="/src/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/src/style.css">
     <script type="module" src="/src/main.js"></script>
   </head>
@@ -16,7 +17,7 @@
       <div class="shell header-layout">
         <div class="header-bar">
           <a class="brand" href="/" aria-label="Paklaunch Lahore home">
-            <img src="/media/logo.png" alt="Paklaunch" width="145" height="32">
+            <img src="/src/media/logo.png" alt="Paklaunch" width="288" height="60">
             <span>Lahore</span>
           </a>
           <nav class="quick-links" aria-label="Main navigation">
@@ -56,7 +57,7 @@
             <h3>Building in Lahore?<br>Start here.</h3>
             <p>In April 2020, Aly Fahd started Paklaunch as a WhatsApp group to connect Pakistani entrepreneurs with investors and mentors. It grew into an international network. The Lahore chapter is a place to meet other people building in the city and tap into that wider community.</p>
           </div>
-          <img src="/media/pathways.webp" alt="" width="900" height="560" loading="lazy">
+          <img src="/src/media/pathways.webp" srcset="/src/media/pathways-392.webp 392w, /src/media/pathways.webp 680w" sizes="(max-width: 412px) calc(100vw - 32px), (max-width: 700px) 380px, (max-width: 1239px) 46vw, 570px" alt="" width="680" height="453" loading="lazy" decoding="async">
         </div>
         <div class="pathways-grid">
           <a class="pathway" href="https://www.paklaunch.com/membership/">
@@ -96,7 +97,7 @@
             <button type="button" id="ahmed-tab" role="tab" aria-selected="false" aria-controls="ahmed-panel" tabindex="-1">Ahmed Khattak</button>
           </div>
           <article class="conversation" id="qasar-panel" role="tabpanel" aria-labelledby="qasar-tab">
-            <img src="/media/qasar.webp" alt="" width="780" height="440" loading="lazy">
+            <img src="/src/media/qasar.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
             <div class="conversation-copy">
               <p class="meta">Paklaunch fireside chat</p>
               <h3>Qasar Younis</h3>
@@ -105,7 +106,7 @@
             </div>
           </article>
           <article class="conversation" id="mamoon-panel" role="tabpanel" aria-labelledby="mamoon-tab" hidden>
-            <img src="/media/mamoon.webp" alt="" width="780" height="440" loading="lazy">
+            <img src="/src/media/mamoon.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
             <div class="conversation-copy">
               <p class="meta">Paklaunch fireside chat</p>
               <h3>Mamoon Hamid</h3>
@@ -114,7 +115,7 @@
             </div>
           </article>
           <article class="conversation" id="ahmed-panel" role="tabpanel" aria-labelledby="ahmed-tab" hidden>
-            <img src="/media/ahmed.webp" alt="" width="780" height="440" loading="lazy">
+            <img src="/src/media/ahmed.webp" alt="" width="800" height="450" loading="lazy" decoding="async">
             <div class="conversation-copy">
               <p class="meta">Paklaunch fireside chat</p>
               <h3>Ahmed Khattak</h3>
@@ -128,7 +129,10 @@
       <section class="shell chapters" id="chapters" aria-labelledby="chapters-title">
         <h2 class="section-label" id="chapters-title">Our chapters</h2>
         <div class="chapter-grid">
-          <img class="chapter-map" src="/media/map.webp" alt="Map of the Paklaunch network" width="1024" height="580" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/src/media/map-480.avif 480w, /src/media/map-920.avif 920w" sizes="(max-width: 700px) calc(100vw - 32px), (max-width: 1300px) 48vw, 630px">
+            <img class="chapter-map" src="/src/media/map.webp" alt="Map of the Paklaunch network" width="1024" height="580" loading="lazy" decoding="async">
+          </picture>
           <div class="chapter-copy">
             <h3>From Lahore to the wider Paklaunch network</h3>
             <p>Paklaunch’s local chapters connect entrepreneurs across Pakistan, North America, the UK, the Gulf, and Singapore.</p>
@@ -152,9 +156,9 @@
                 <h3>Live programming</h3>
                 <p>Paklaunch brings people together through meetups, fireside chats, and the participant-led UNConference series. Check the official calendar for new dates.</p>
                 <div class="event-gallery">
-                  <img src="/media/palo-alto.webp" alt="Speaker at a Paklaunch UNConference" width="243" height="629" loading="lazy">
-                  <img src="/media/riyadh.webp" alt="Fireside conversation at a Paklaunch UNConference" width="243" height="629" loading="lazy">
-                  <img src="/media/dubai.webp" alt="Panel discussion at a Paklaunch UNConference" width="243" height="629" loading="lazy">
+                  <img src="/src/media/palo-alto.webp" alt="Speaker at a Paklaunch UNConference" width="243" height="629" loading="lazy" decoding="async">
+                  <img src="/src/media/riyadh.webp" alt="Fireside conversation at a Paklaunch UNConference" width="243" height="629" loading="lazy" decoding="async">
+                  <img src="/src/media/dubai.webp" alt="Panel discussion at a Paklaunch UNConference" width="243" height="629" loading="lazy" decoding="async">
                 </div>
                 <a class="arrow-button" href="https://www.paklaunch.com/#events">Explore Paklaunch events <span aria-hidden="true">→</span></a>
               </article>
@@ -167,7 +171,7 @@
                 <h3>From the Paklaunch channel</h3>
                 <p>Watch conversations with entrepreneurs and investors about building companies, raising capital, and opportunities in Pakistan’s startup ecosystem.</p>
                 <a class="video-image" href="https://youtu.be/ohHRYD65GxU" aria-label="Watch the Tim Draper conversation on YouTube">
-                  <img src="/media/video.webp" alt="" width="720" height="405" loading="lazy">
+                  <img src="/src/media/video.webp" srcset="/src/media/video-480.webp 480w, /src/media/video.webp 960w" sizes="(max-width: 700px) calc(100vw - 32px), (max-width: 1150px) 49vw, 600px" alt="" width="960" height="540" loading="lazy" decoding="async">
                   <span class="play" aria-hidden="true">▶</span>
                 </a>
                 <a class="arrow-button" href="https://www.youtube.com/@paklaunch2937">Visit the YouTube channel <span aria-hidden="true">→</span></a>
@@ -195,7 +199,7 @@
       <div class="shell footer-layout">
         <div>
           <a class="brand" href="/" aria-label="Paklaunch Lahore home">
-            <img src="/media/logo.png" alt="Paklaunch" width="145" height="32">
+            <img src="/src/media/logo.png" alt="Paklaunch" width="288" height="60" loading="lazy" decoding="async">
             <span>Lahore</span>
           </a>
           <p>Lahore, Pakistan</p>
